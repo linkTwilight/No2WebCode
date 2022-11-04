@@ -1,0 +1,62 @@
+* {
+    /*字体颜色*/
+    color: #05122c;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /*背景颜色*/
+    background-color: #898989;
+
+    /*谷歌浏览器需要设置具体的大小,不然div中的height不起作用*/
+    height: 800px;
+}
+
+/*布局*/
+div {
+    position: relative;
+    float: left;
+}
+
+#div0 {
+    width: 80%;
+    margin-left: 10%;
+    height: 100%; /*需要在body设置具体的长度*/
+    background-color: #ffffff;
+    /*border:1px solid red;*/
+}
+
+/*表格大小*/
+#div1{
+    width:80%;
+    margin-left:10%;
+    /*border:0px solid blue;*/
+    height:200px;
+    margin-top:32px;
+}
+
+/*购物车详情*/
+.cart_title {
+    font-size: 22px;
+    text-align: center;
+    /*border:1px solid red;*/
+}
+
+.delBtn {
+    width: 18px;
+    height: 18px;
+}
+
+#fruit_tbl{
+    width:90%;
+    margin-left:5%;
+    line-height:28px;
+    border-collapse:collapse;
+}
+#fruit_tbl , #fruit_tbl tr , #fruit_tbl td{
+    border:1px solid #05122c;
+    text-align:center;
+}
