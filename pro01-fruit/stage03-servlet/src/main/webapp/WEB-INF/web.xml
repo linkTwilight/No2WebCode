@@ -6,10 +6,19 @@
     
     <servlet>
         <servlet-name>hello</servlet-name>
-        <servlet-class>com.learn.HelloServlet</servlet-class>
+        <servlet-class>com.learn.servlets.HelloServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>hello</servlet-name>
-        <url-pattern>/</url-pattern>
+        <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>add</servlet-name>
+        <servlet-class>com.learn.servlets.AddServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>add</servlet-name>
+        <url-pattern>/add</url-pattern>
     </servlet-mapping>
 </web-app>
