@@ -31,5 +31,24 @@
         <url-pattern>/testsession</url-pattern>
     </servlet-mapping>
 
+    <!-- 配置thymeleaf需要使用的上下文参数 -->
+    <context-param>
+        <!-- 视图前缀 -->
+        <param-name>view-prefix</param-name>
+        <param-value>/</param-value>
+    </context-param>
+    <context-param>
+        <!-- 视图后缀 -->
+        <param-name>view-suffix</param-name>
+        <param-value>.html</param-value>
+    </context-param>
 
+<!--    <servlet>
+        <servlet-name>tytest</servlet-name>
+        <servlet-class>com.learn.servlets.ThymeleafServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>tytest</servlet-name>
+        <url-pattern>/tytest</url-pattern>
+    </servlet-mapping>-->
 </web-app>
