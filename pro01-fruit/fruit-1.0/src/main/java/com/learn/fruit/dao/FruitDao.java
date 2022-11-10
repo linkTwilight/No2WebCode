@@ -8,4 +8,6 @@ public interface FruitDao {
     void addFruit(Fruit fruit);
 
     List<Fruit> getFruitList();
+
+    Fruit getFruitById(Integer id);
 }

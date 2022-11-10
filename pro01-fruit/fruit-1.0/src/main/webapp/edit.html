@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="zh-ch" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>编辑</title>
+    </head>
+    <body>
+        <div id="div0">
+            <form action="/add" method="post">
+                水果名: <input type="text" name="fname" th:value="${session.fruit.fname}"><br>
+                价格: <input type="text" name="price" th:value="${session.fruit.price}"><br>
+                数量: <input type="text" name="fcount" th:value="${session.fruit.fcount}"><br>
+                描述: <input type="text" name="remark" th:value="${session.fruit.remark}"><br>
+                <input type="submit" value="提交">
+            </form>
+        </div>
+    </body>
+</html>

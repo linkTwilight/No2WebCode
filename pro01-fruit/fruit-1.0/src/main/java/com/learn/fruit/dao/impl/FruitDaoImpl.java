@@ -20,4 +20,10 @@ public class FruitDaoImpl extends BaseDao<Fruit> implements FruitDao {
         sql = "SELECT * FROM t_fruit";
         return super.executeQuery(sql);
     }
+
+    @Override
+    public Fruit getFruitById(Integer id) {
+        sql="SELECT * FROM t_fruit WHERE id=?";
+        return super.load(sql,id);
+    }
 }
