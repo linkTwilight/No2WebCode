@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>pro01-fruit/stage03-servlet</module>
+        <module>pro01-fruit/fruit-1.0</module>
     </modules>
 
     <properties>

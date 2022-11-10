@@ -1,0 +1,36 @@
+body{
+    margin:0;
+    padding:0;
+    background-color: darkslategray;
+}
+div{
+    position: relative;
+    float: left;
+}
+#div0{
+    width:80%;
+    margin-left: 10%;
+    border:1px solid #e10707;
+    background-color: beige;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    margin-top: 32px;
+    border-radius: 8px;
+}
+#fruit_tbl{
+    width: 60%;
+    margin-left: 20%;
+    border: 1px solid lightgray;
+    border-collapse: collapse;
+    line-height: 26px;
+
+}
+#fruit_tbl tr , #fruit_tbl th , #fruit_tbl td{
+    border: 1px solid lightgray;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 14px;
+}
+.w25{
+    width: 25%;
+}
