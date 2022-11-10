@@ -14,6 +14,7 @@ import java.io.PrintWriter;
 public class AddServlet extends HttpServlet {
 
     FruitDao fruitDao = new FruitDaoImpl();
+
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
@@ -30,8 +31,16 @@ public class AddServlet extends HttpServlet {
 //        System.out.println("添加成功");
         resp.setCharacterEncoding("UTF-8");
         resp.setContentType("text/html;charset=utf-8");
-        PrintWriter writer = resp.getWriter();
-        writer.print("<p>添加成功</p>");
-        writer.flush();
+/*        PrintWriter writer = resp.getWriter();
+//        writer.print("<p>添加成功</p>");
+        writer.print("<script type = 'text/javascript' > alert('添加成功');window.location.href = 'success.html';        </script >");
+
+        writer.flush();*/
+//        转发
+//        resp.sendRedirect("success.html");
+//        重定向  请求  向内部请求资源  通过forward转发
+        req.getRequestDispatcher("success.html").forward(req,resp);
+
+
     }
 }
