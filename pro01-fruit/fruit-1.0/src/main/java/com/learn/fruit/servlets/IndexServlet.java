@@ -14,7 +14,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-@WebServlet("index")
+@WebServlet("/index")
 public class IndexServlet extends ViewBaseServlet{
 
     @Override
@@ -25,6 +25,8 @@ public class IndexServlet extends ViewBaseServlet{
         // 使用session
         HttpSession session = req.getSession();
         session.setAttribute("fruitList",fruitList);
+//        检测判断是否正常
+//        session.setAttribute("fruitList",new ArrayList<Fruit>());
 
         super.processTemplate("index",req,resp);
     }

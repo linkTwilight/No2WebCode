@@ -1,8 +1,5 @@
 package com.learn.fruit.dao.impl;
 
-import com.learn.base.BaseDao;
-import com.learn.dao.FruitDao;
-import com.learn.entity.Fruit;
 import com.learn.fruit.base.BaseDao;
 import com.learn.fruit.dao.FruitDao;
 import com.learn.fruit.entity.Fruit;
