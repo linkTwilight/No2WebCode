@@ -10,4 +10,6 @@ public interface FruitDao {
     List<Fruit> getFruitList();
 
     Fruit getFruitById(Integer id);
+
+    void updateFruit(Fruit fruit);
 }

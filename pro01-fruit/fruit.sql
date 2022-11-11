@@ -15,3 +15,5 @@ insert  into `t_fruit`(`id`,`fname`,`price`,`fcount`,`remark`) values (3,'葡萄
 
 INSERT INTO t_fruit (fname, price, fcount, remark) VALUES (?,?,?,?);
 SELECT * FROM t_fruit WHERE id=?;
+
+UPDATE t_fruit SET fname=? ,price = ? ,fcount = ? , remark = ?WHERE id=?;

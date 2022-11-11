@@ -23,7 +23,13 @@ public class FruitDaoImpl extends BaseDao<Fruit> implements FruitDao {
 
     @Override
     public Fruit getFruitById(Integer id) {
-        sql="SELECT * FROM t_fruit WHERE id=?";
-        return super.load(sql,id);
+        sql = "SELECT * FROM t_fruit WHERE id=?";
+        return super.load(sql, id);
+    }
+
+    @Override
+    public void updateFruit(Fruit fruit) {
+        sql = "UPDATE t_fruit SET fname=? ,price = ? ,fcount = ? , remark = ? WHERE id=?";
+        super.executeUpdate(sql, fruit.getFname(), fruit.getPrice(), fruit.getFcount(), fruit.getRemark(), fruit.getId());
     }
 }

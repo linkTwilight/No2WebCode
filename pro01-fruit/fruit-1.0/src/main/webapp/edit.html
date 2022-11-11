@@ -6,7 +6,8 @@
     </head>
     <body>
         <div id="div0">
-            <form action="/add" method="post">
+            <form action="/update" method="post">
+                <input type="hidden" name="id" th:value="${session.fruit.id}">
                 水果名: <input type="text" name="fname" th:value="${session.fruit.fname}"><br>
                 价格: <input type="text" name="price" th:value="${session.fruit.price}"><br>
                 数量: <input type="text" name="fcount" th:value="${session.fruit.fcount}"><br>
