@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <title>首页</title>
         <link rel="stylesheet" href="css/index.css">
+        <script type="text/javascript" src="js/index.js"></script>
     </head>
     <body>
         <div id="div0">
@@ -21,7 +22,7 @@
                     <td><a th:href="'edit?id=' + ${fruit.id}" th:text="${fruit.fname}">苹果</a></td>
                     <td th:text="${fruit.price}">5</td>
                     <td th:text="${fruit.fcount}">50</td>
-                    <td><input type="button" value="删除"/></td>
+                    <td><input type="button" value="删除" th:onclick="'delFruit('+${fruit.id}+')'"/></td>
                 </tr>
 
             </table>

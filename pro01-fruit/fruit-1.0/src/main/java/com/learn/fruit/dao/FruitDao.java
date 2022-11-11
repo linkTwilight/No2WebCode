@@ -12,4 +12,6 @@ public interface FruitDao {
     Fruit getFruitById(Integer id);
 
     void updateFruit(Fruit fruit);
+
+    void delFruit(Integer id);
 }
